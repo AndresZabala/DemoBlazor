@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "pU63j1JjSjUpkN2hyZbDMUhM0NOJVbWt4TlP1FrxO+/7ykuELvW1o4CrlgsZjRoDvIOmJShn2h0Xy5Fyg6zNnQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\andres.zabala\\source\\repos\\ProyectBlazor\\Blazor.Model\\Blazor.Model.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\andres.zabala\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\andres.zabala\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

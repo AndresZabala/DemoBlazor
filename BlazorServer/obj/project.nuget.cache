@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "X5UxJMSFHaFdwBYViLst13qjzPQ1U/mtAv1h79as+JQCDkZWfECG0EAz41M87m7S0xW27MFCaw0KXN9jxC5Hlw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\andres.zabala\\source\\repos\\ProyectBlazor\\BlazorServer\\BlazorServer.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\andres.zabala\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

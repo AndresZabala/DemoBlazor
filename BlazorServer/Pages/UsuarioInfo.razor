@@ -1,0 +1,48 @@
+﻿@page "/UsuarioInfo"
+@inject HttpClient http;
+@using BlazorApi.Models;
+@using Blazor.Model; 
+@using Newtonsoft.Json;
+
+<h1> Informacion de Usuario </h1>
+
+<button class="btn btn-success" @onclick="@GetUsuario">Consultar</button>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Edad</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var Usuarios in listUse)
+        {
+            <tr>
+                <td>@Usuarios.Nombre</td>
+                <td>@Usuarios.Apellido</td>
+                <td>@Usuarios.Edad.ToString()</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@code{
+    List<Usuario> listUse = new List<Usuario>();
+    private async Task GetUsuario()
+    {
+        try
+        {
+            var d = await http.GetStringAsync("https://localhost:44334/api/usuario");
+            listUse = JsonConvert.DeserializeObject<List<Usuario>>(d);
+        }
+        catch (Exception e)
+        {
+
+            Console.WriteLine(e.Message);
+        }
+    }
+}
+
+

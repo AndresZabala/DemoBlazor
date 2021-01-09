@@ -1,0 +1,9 @@
+C:\Users\andres.zabala\source\repos\ProyectBlazor\Blazor.Model\bin\Debug\netstandard2.0\Blazor.Model.deps.json
+C:\Users\andres.zabala\source\repos\ProyectBlazor\Blazor.Model\bin\Debug\netstandard2.0\Blazor.Model.dll
+C:\Users\andres.zabala\source\repos\ProyectBlazor\Blazor.Model\bin\Debug\netstandard2.0\Blazor.Model.pdb
+C:\Users\andres.zabala\source\repos\ProyectBlazor\Blazor.Model\obj\Debug\netstandard2.0\Blazor.Model.AssemblyInfoInputs.cache
+C:\Users\andres.zabala\source\repos\ProyectBlazor\Blazor.Model\obj\Debug\netstandard2.0\Blazor.Model.AssemblyInfo.cs
+C:\Users\andres.zabala\source\repos\ProyectBlazor\Blazor.Model\obj\Debug\netstandard2.0\Blazor.Model.csproj.CoreCompileInputs.cache
+C:\Users\andres.zabala\source\repos\ProyectBlazor\Blazor.Model\obj\Debug\netstandard2.0\Blazor.Model.dll
+C:\Users\andres.zabala\source\repos\ProyectBlazor\Blazor.Model\obj\Debug\netstandard2.0\Blazor.Model.pdb
+C:\Users\andres.zabala\source\repos\ProyectBlazor\Blazor.Model\obj\Debug\netstandard2.0\Blazor.Model.csprojAssemblyReference.cache

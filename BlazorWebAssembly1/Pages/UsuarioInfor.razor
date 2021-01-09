@@ -1,0 +1,38 @@
+﻿@page "/UsuarioInfor"
+@inject IUsuarioService servicesUsuario;
+@using Blazor.Model;
+@using BlazorWebAssembly1.Services; 
+@using Newtonsoft.Json; 
+
+
+<h2>Información de Usuario</h2>
+<button class="btn btn-success" @onclick="@GetUsuario">Consultar</button>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Edad</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var Usuarios in listUse)
+        {
+            <tr>
+                <td>@Usuarios.Nombre</td>
+                <td>@Usuarios.Apellido</td>
+                <td>@Usuarios.Edad.ToString()</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@code{
+    IEnumerable<Usuario> listUse = new List<Usuario>();
+
+    public async Task GetUsuario()
+    {
+        listUse = await servicesUsuario.GetUsuarios();
+    }
+}
