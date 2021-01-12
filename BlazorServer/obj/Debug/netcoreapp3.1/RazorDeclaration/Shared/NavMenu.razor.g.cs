@@ -75,6 +75,20 @@ using BlazorServer.Shared;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 1 "C:\Users\andres.zabala\source\repos\ProyectBlazor\BlazorServer\Shared\NavMenu.razor"
+using BlazorServer.Data;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 2 "C:\Users\andres.zabala\source\repos\ProyectBlazor\BlazorServer\Shared\NavMenu.razor"
+using Blazor.Model;
+
+#line default
+#line hidden
+#nullable disable
     public partial class NavMenu : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
@@ -83,9 +97,11 @@ using BlazorServer.Shared;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 33 "C:\Users\andres.zabala\source\repos\ProyectBlazor\BlazorServer\Shared\NavMenu.razor"
+#line 35 "C:\Users\andres.zabala\source\repos\ProyectBlazor\BlazorServer\Shared\NavMenu.razor"
        
     private bool collapseNavMenu = true;
+    
+    public IEnumerable<MenuNav> menuList;
 
     private string NavMenuCssClass => collapseNavMenu ? "collapse" : null;
 
@@ -94,9 +110,16 @@ using BlazorServer.Shared;
         collapseNavMenu = !collapseNavMenu;
     }
 
+
+    protected override async Task OnInitializedAsync()
+    {
+        menuList = await menuService.GetMenuService();
+    }
+
 #line default
 #line hidden
 #nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private MenuService menuService { get; set; }
     }
 }
 #pragma warning restore 1591

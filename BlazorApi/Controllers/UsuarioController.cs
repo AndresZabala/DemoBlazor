@@ -12,9 +12,7 @@ namespace BlazorApi.Controllers
     [Route("api/[controller]")]
     public class UsuarioController : ControllerBase
     {
-
         public DataUsuario data = new DataUsuario();
-
 
         [HttpGet]
         public IActionResult Get()

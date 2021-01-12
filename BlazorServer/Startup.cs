@@ -31,6 +31,8 @@ namespace BlazorServer
             services.AddServerSideBlazor();
             services.AddSingleton<WeatherForecastService>();
 
+            //Se agrega el servicio de Menu lo recomendable es tener una interfaz pero solo por el ejemplo solo se utiliza un servicio
+            services.AddSingleton<MenuService>();
 
             //Se agrega el servicio HttpCliente para poder consumir la API
             services.AddSingleton<HttpClient>();

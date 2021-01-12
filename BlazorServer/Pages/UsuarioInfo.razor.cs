@@ -8,14 +8,6 @@ namespace BlazorServer.Pages
 {
     public partial class UsuarioInfor
     {
-        
-
-
-
-
-
-
-
-
+       
     }
 }
